@@ -1,18 +1,23 @@
 
-
 public class ticket {
+	
 	private double price;
 	private int number;
+	
 	public ticket (int number) {
 		this.number = number;
 	}
 	
+	
+	
 	public double getPrice () {
+		
 		return price;
 	}
 	
-	public void toString () {
-		System.out.println (“ Number: ” + number + “Price: “ + price);
+	public String toString () {
+		return (" Number: " + this.number + " Price: " + getPrice());
+	}
 }
 
-public class walkupTicket extends ticket {
+
